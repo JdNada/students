@@ -1,0 +1,15 @@
+<h1>Liste des Étudiants</h1>
+<ul>
+  <li *ngFor="let student of students">
+    {{ student.name }} ({{ student.age }} ans)
+  </li>
+</ul>
+
+<h2>Ajouter un Étudiant</h2>
+<form (ngSubmit)="addStudent()">
+  <label for="name">Nom:</label>
+  <input id="name" [(ngModel)]="newStudent.name" name="name" required>
+  <label for="age">Âge:</label>
+  <input id="age" [(ngModel)]="newStudent.age" name="age" type="number" required>
+  <button type="submit" [disabled]="!newStudent.name || !newStudent.age">Ajouter</button>
+</form>
