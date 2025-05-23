@@ -12,12 +12,8 @@
 - Service-based architecture for API calls
 ⚙️ Requirements
 ✅Backend
-- Python 3.9+
 - FastAPI
-- SQLAlchemy
-- Uvicorn
-- MySQL or PostgreSQL
-- XAMPP (for MySQL, if used)
+- MySQL 
 ✅Frontend
 - Node.js (v18+ recommended)
 - Angular CLI (`npm install -g @angular/cli`)
